@@ -1,0 +1,29 @@
+{
+  "name": "keeper",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Fetterman",
+    "email": "navx2810@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "poi": "^9.3.5",
+    "poi-preset-mithril-jsx": "navx2810/mithril-jsx"
+  },
+  "scripts": {
+    "dev": "poi",
+    "build": "poi build"
+  },
+  "poi": {
+    "entry": "./client/index.js",
+    "devServer": { "proxy": "http://localhost:5000" },
+    "presets": [
+      "mithril-jsx"
+    ]
+  },
+  "dependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "uuid": "^3.1.0"
+  }
+}
